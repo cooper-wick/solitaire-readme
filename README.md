@@ -123,7 +123,12 @@ Key design decisions include:
 This design enables new Solitaire variants or alternative views to be introduced without modifying controller logic.
 
 ### Testing
-[TODO]
+The project includes a **comprehensive JUnit test suite** covering all architectural layers.
+
+- Model behavior is validated through unit tests for cards, piles, scoring, and variant-specific rules.
+- Controller behavior is tested using mock models and appendables to verify error handling and game state.
+- View output is validated through string comparisons.
+- Mocks are used to isolate components for comprehnsible tests.
 
 ### Status
 Archived — maintained for portfolio and academic documentation purposes.
