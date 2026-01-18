@@ -19,8 +19,7 @@ This project was developed as part of **Northeastern University’s CS3100 (Obje
 ## How to Play
 
 ### Quickstart
-This project does **not** include a prebuilt executable JAR.
-The game is run directly using `java` and the project’s source code.
+This project does **not** include a prebuilt executable JAR. The game is run directly using `java` and the project’s source code.
 
 From the project root, run:
 
