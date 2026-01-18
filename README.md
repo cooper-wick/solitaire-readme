@@ -92,7 +92,17 @@ The game supports multiple solitaire rule sets.
 [TODO]
 
 ### View
-[TODO]
+
+The view layer is a **textual renderer** that translates the current game state into a human-readable command-line display.
+
+- The view depends only on the `KlondikeModel` interface and never mutates game state.
+- All rule-specific behavior is determined by the model and communicated via queries to the model.
+- Card rendering uses fixed-width formatting to ensure consistent alignment across ranks (including two-character ranks like `10`), preserving a readable cascade layout.
+- Face-down cards are displayed as `?`, while empty foundation piles are rendered as `<none>`, providing clear visual cues to the player.
+- The view supports output to any `Appendable`, allowing for redirection to standard output, logs, or test classes.
+
+This design keeps presentation logic fully isolated from game rules and input handling, resulting in a testable, variant-agnostic user interface.
+
 
 ### Controller
 
