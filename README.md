@@ -20,15 +20,14 @@ This project was developed as part of **Northeastern University’s CS3100 (Obje
 
 ### Quickstart
 This project does **not** include a prebuilt executable JAR.
+The game is run directly using `java` and the project’s source code.
 
-[TODO]
+From the project root, run:
 
-Example [PLACEHOLDER]:
 ```bash
-java ...
+java klondike.Klondike <gameType> [numPiles] [numDraw]
 ```
 
-### Controls
 ### Controls
 
 Gameplay is controlled through **text-based commands** entered via standard input. Each command consists of a short string followed by one or more integers.
