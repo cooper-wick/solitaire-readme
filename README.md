@@ -95,7 +95,17 @@ The game supports multiple solitaire rule sets.
 [TODO]
 
 ### Controller
-[TODO]
+
+The controller translates user input into game actions while maintaining a strict separation between user interaction and game logic. It serves as the connection between the model and the textual view.
+
+The controller processes **string-based commands with numeric arguments**, mapping them to operations on the model. Input is validated at the model level, ensuring that invalid commands or illegal moves do not alter the game state.
+
+Key design decisions include:
+- **Model Decoupling**: The controller contains no Solitaire-specific logic, allowing it to operate across different game variants (Klondike and Whitehead).
+- **Input handling**: Invalid input, illegal moves, and unexpected end-of-input are handled gracefully without crashing the game.
+- **Safe termination**: Players may quit at any point, at which time the controller renders the current game state before exiting.
+
+This design enables new Solitaire variants or alternative views to be introduced without modifying controller logic.
 
 ### Testing
 [TODO]
