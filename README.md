@@ -31,7 +31,6 @@ java klondike.Klondike <gameType> [numPiles] [numDraw]
 #### Arguments
 - **`gameType`** (required)  
   Specifies which Solitaire variant to play.  
-  Valid options:
   - `basic` — Standard Klondike Solitaire
   - `whitehead` — Whitehead Klondike
 
