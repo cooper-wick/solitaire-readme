@@ -5,7 +5,7 @@
 
 The project follows a **Model–View–Controller (MVC)** architecture, separating game logic, user interaction, and presentation. Gameplay is driven entirely through textual input and output, emphasizing clear state representation, input validation, and rule enforcement.
 
-This project was developed as part of **Northeastern University’s CS3100 (Object-Oriented Design)** course and is archived as a demonstration of early-stage software design, MVC architecture, and test-driven development.
+This project was developed as part of **Northeastern University’s CS3100 (Object-Oriented Design)** course. As a result, the code is private to maintain the academic integrity of the class, but can be made available upon request for a limited time.
 
 ## Key Features
 - Command-line playable Solitaire game
