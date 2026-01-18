@@ -80,7 +80,6 @@ The game supports multiple solitaire rule sets.
 #### Klondike
 [TODO]
 
-
 #### Whitehead
 [TODO]
 
@@ -89,11 +88,18 @@ The game supports multiple solitaire rule sets.
 ## Architecture Highlights
 
 ### Model
-[TODO]
+The model implements the ruleset and state management for Solitaire variants.
+
+- Core game behavior is defined through the `KlondikeModel` interface, enabling controller and view decoupling.
+- `BasicKlondike` and `WhiteheadKlondike` provide variant-specific rules, while commonalities are shared in `AbstractKlondike`.
+- The model is decomposed into smaller components including `Card` and `Pile`.
+- Card representations use explicit `Rank` and `Suit` enums, supporting comparison and consistent rendering.
+
+This structure allows new Solitaire variants to be added with minimal impact on existing code.
 
 ### View
 
-The view layer is a **textual renderer** that translates the current game state into a human-readable command-line display.
+The view is a **textual renderer** that translates the current game state into a human-readable command-line display.
 
 - The view depends only on the `KlondikeModel` interface and never mutates game state.
 - All rule-specific behavior is determined by the model and communicated via queries to the model.
@@ -102,7 +108,6 @@ The view layer is a **textual renderer** that translates the current game state 
 - The view supports output to any `Appendable`, allowing for redirection to standard output, logs, or test classes.
 
 This design keeps presentation logic fully isolated from game rules and input handling, resulting in a testable, variant-agnostic user interface.
-
 
 ### Controller
 
