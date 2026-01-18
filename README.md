@@ -29,7 +29,36 @@ java ...
 ```
 
 ### Controls
-- [TODO]
+### Controls
+
+Gameplay is controlled through **text-based commands** entered via standard input. Each command consists of a short string followed by one or more integers.
+
+All pile indices provided by the user are **1-based**.
+
+#### Available Commands
+
+- `mpp <sourcePile> <numCards> <destPile>`  
+  Move cards from one cascade pile to another.
+
+- `md <destPile>`  
+  Move the top card from the draw pile to a cascade pile.
+
+- `mpf <sourcePile> <foundation>`  
+  Move the top card from a cascade pile to a foundation pile.
+
+- `mdf <foundation>`  
+  Move the top card from the draw pile to a foundation pile.
+
+- `dd`  
+  Discard the top card from the draw pile.
+
+- `q` or `Q`  
+  Quit the game immediately.
+
+#### Notes
+- Commands are **case-sensitive**, except for quitting (`q` or `Q`).
+- Invalid commands or illegal moves will display an error message and prompt for input again.
+- The game can be quit at **any time**, including while entering command arguments.
 
 ### Rules Overview
 
