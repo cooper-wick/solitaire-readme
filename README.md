@@ -102,8 +102,8 @@ The controller processes **string-based commands with numeric arguments**, mappi
 
 Key design decisions include:
 - **Model Decoupling**: The controller contains no Solitaire-specific logic, allowing it to operate across different game variants (Klondike and Whitehead).
-- **Input handling**: Invalid input, illegal moves, and unexpected end-of-input are handled gracefully without crashing the game.
-- **Safe termination**: Players may quit at any point, at which time the controller renders the current game state before exiting.
+- **Input parsing**: Invalid input and unexpected end-of-input are handled by asking the user to retry input.
+- **Safe termination**: Players may quit at any point, causing a final game state render before exiting.
 
 This design enables new Solitaire variants or alternative views to be introduced without modifying controller logic.
 
