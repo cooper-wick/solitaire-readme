@@ -3,7 +3,7 @@
 ## Overview
 **Solitaire** is a command-line implementation of classic solitaire card games written in **Java**, supporting multiple rule variants including **Klondike** and **Whitehead**. The game allows players to select the desired solitaire variant via command-line arguments at runtime.
 
-The project follows a **Model–View–Controller (MVC)** architecture, separating game logic, user interaction, and presentation. Gameplay is driven entirely through textual input and output, emphasizing clear state representation, input validation, and rule enforcement.
+The project follows a **Model–View–Controller (MVC)** architecture, separating game logic, user interaction, and visual presentation. Gameplay is supported through textual input and output, allowing for effective input validation and rule enforcement.
 
 This project was developed as part of **Northeastern University’s CS3100 (Object-Oriented Design)** course. As a result, the code is private to maintain the academic integrity of the class, but can be made available upon request for a limited time.
 
