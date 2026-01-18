@@ -75,13 +75,51 @@ All pile indices provided by the user are **1-based**.
 
 ### Rules Overview
 
-The game supports multiple solitaire rule sets.
+The game implements classic **Klondike Solitaire**, along with the **Whitehead Klondike** variant. Both versions share the same overall objective and core structure, with specific rule differences outlined below.
+
+---
 
 #### Klondike
-[TODO]
+
+Klondike is played using a deck composed of one or more **equal-length, single-suit runs** of consecutive cards starting from Ace.
+
+**Game Areas**
+- **Foundation Piles**:  
+  Initially empty. Each foundation pile builds upward from **Ace to the highest card**, using a single suit.  
+  The number of foundation piles equals the number of Aces in the deck.
+- **Cascade Piles**:  
+  Cards are dealt into a configurable number of piles. All cards start face-down except the bottom card of each pile.
+- **Draw Pile**:  
+  Contains all remaining cards. A fixed number of cards are revealed, but only the first revealed card may be used.
+
+**Build Rules**
+- Face-up cards in cascade piles must form **descending sequences** of consecutive ranks.
+- Builds must **alternate colors** (red on black or black on red).
+
+**Legal Moves**
+- Move the bottom face-up card of a cascade pile to a foundation pile.
+- Move a build of face-up cards from one cascade pile to another, preserving valid build rules.
+- Move the first draw card to a cascade pile or foundation pile, following the same placement rules.
+- Discard the first draw card to the bottom of the draw pile (the draw pile is recycled indefinitely).
+- Quit the game at any time.
+
+**Scoring and End Condition**
+- The score is calculated by **summing the values of the top card in each foundation pile**.
+- The game ends when **no legal moves remain**.
+
+---
 
 #### Whitehead
-[TODO]
+
+Whitehead Klondike follows the same structure and objective as Klondike, with the following rule changes:
+
+- All cascade pile cards are dealt **face-up**.
+- Builds must be **single-colored** (red on red or black on black).
+- When moving multiple cards between cascade piles, the moved cards must form a **single-suit run**.
+- Any card value may be moved into an empty cascade pile (not just Kings).
+
+All other rules remain unchanged from standard Klondike.
+
 
 ## Screenshots
 
