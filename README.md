@@ -121,26 +121,21 @@ Whitehead Klondike follows the same structure and objective as Klondike, with th
 All other rules remain unchanged from standard Klondike.
 
 ## Screenshots
-<table style="background-color:#0d1117; padding:10px; border-radius:8px;">
+<table>
   <tr>
-    <td align="center" style="padding:10px;">
-<img width="345" height="228" alt="klondikeStart" src="https://github.com/user-attachments/assets/97b51ac3-509e-492c-84b7-e743caa0ca94" />
-
-
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ae329998-e474-4f04-8d62-4901e12ad358" width="350" />
     </td>
-    <td align="center" style="padding:10px;">
-      <img src="https://github.com/user-attachments/assets/5e27f965-3aea-42c1-ac6e-1bee4fd1cce6"
-           width="350" />
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/5e27f965-3aea-42c1-ac6e-1bee4fd1cce6" width="350" />
     </td>
   </tr>
   <tr>
-    <td align="center" style="padding:10px;">
-      <img src="https://github.com/user-attachments/assets/5d0b8c6a-0bc4-4ae4-9ee5-966b6468d93c"
-           width="350" />
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/5d0b8c6a-0bc4-4ae4-9ee5-966b6468d93c" width="350" />
     </td>
-    <td align="center" style="padding:10px;">
-      <img src="https://github.com/user-attachments/assets/831beb40-3db4-491a-a452-a15c28dbb548"
-           width="350" />
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/831beb40-3db4-491a-a452-a15c28dbb548" width="350" />
     </td>
   </tr>
 </table>
