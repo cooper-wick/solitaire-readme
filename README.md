@@ -124,7 +124,8 @@ All other rules remain unchanged from standard Klondike.
 <table style="background-color:#0d1117; padding:10px; border-radius:8px;">
   <tr>
     <td align="center" style="padding:10px;">
-      <img width="345" height="228" alt="klondikeStart" src="https://github.com/user-attachments/assets/ae329998-e474-4f04-8d62-4901e12ad358" />
+<img width="345" height="228" alt="klondikeStart" src="https://github.com/user-attachments/assets/97b51ac3-509e-492c-84b7-e743caa0ca94" />
+
 
     </td>
     <td align="center" style="padding:10px;">
