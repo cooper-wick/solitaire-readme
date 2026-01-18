@@ -28,6 +28,22 @@ From the project root, run:
 java klondike.Klondike <gameType> [numPiles] [numDraw]
 ```
 
+#### Arguments
+- **`gameType`** (required)  
+  Specifies which Solitaire variant to play.  
+  Valid options:
+  - `basic` — Standard Klondike Solitaire
+  - `whitehead` — Whitehead Klondike
+
+- **`numPiles`** (optional)  
+  Number of cascade piles.  
+  Defaults to `7` if not provided.
+
+- **`numDraw`** (optional)  
+  Number of cards drawn at a time from the draw pile.  
+  Defaults to `3` if not provided.
+
+
 ### Controls
 
 Gameplay is controlled through **text-based commands** entered via standard input. Each command consists of a short string followed by one or more integers.
